@@ -1,6 +1,6 @@
 # playground
 
-## Stacked Bar 그래프 그리기 for Black and White scheme (인권   내용)
+## Stacked Bar 그래프 그리기 for Black and White scheme (인권 기사 작업 내용)
 
 use temp_fig, replace
 
