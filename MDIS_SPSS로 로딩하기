@@ -1,0 +1,50 @@
+** [MDIS: SPSS Script를 사용해서 raw data를 불러오고, SPSS와 Stata 데이터로 저장하기]
+
+*  	현재 스크립트 파일은 파일명만 출력되어 있습니다.
+*	따라서, 저장된 추출 결과 파일의 경로를 '/FILE' 추가하여야 합니다.
+*  	또한, 다년도 추출 결과 파일은 파일명 뒤에 해당년도가 
+*	'_YYYY' 형태로 추가되므로 역시 '/FILE'에 추가 하여야 합니다.
+* 
+*	툴바의 실행 아이콘으로 실행할 경우 커서가 있는 한 라인만 실행됩니다.
+*	데이터셋 및 변수설명까지 모두 실행하기 위해서는
+*		Run -> All 메뉴로 실행하시기 바랍니다.
+*
+*	SPSS 스크립트는 SPSS에서 파일 경로와 파일명만 수정하면 바로 실행가능하며,
+*	데이터셋 생성 후에 SPSS 여러 가지 분석 기능을 사용할 수 있습니다.
+*
+*	현재 스크립트에 적용된 변수명은 C1,C2,... 형태로 되어있습니다.
+*	항목명을 변수설명으로 사용하기 위해서는 SPSS의 옵션을 설정해야 합니다.
+*	Edit -> Options -> Output Labels에서 Label로 설정하시기 바랍니다.
+*	
+*	적용된 변수 설명은 분석 기능에서 사용됩니다.
+
+
+
+cd 'D:\Data\Your Folder'.
+
+DATASET NAME MDSS WINDOW=FRONT.
+GET DATA  /TYPE = TXT
+ /FILE = 'extr_jaesungc_20151215_88970_2012.txt'
+ /DELCASE = LINE
+ /DELIMITERS = ","
+ /FIRSTCASE = 1
+ /IMPORTCASE = ALL
+ /VARIABLES =
+         C1 A1
+        C2 A2
+        C53 F6 .
+CACHE.
+EXECUTE.
+ VARIABLE LABELS         C1 '지역 구분'
+        C2 '행정구역(시도)'
+        C53 '가중치(weight)'.
+
+SAVE OUTFILE = "file.sav".
+SAVE TRANSLATE OUTFILE='file.dta'.
+
+
+** In Stata, please do the below to make variables easy to handle
+* destring _all, replace
+* renvars, lowcase
+* compress
+
