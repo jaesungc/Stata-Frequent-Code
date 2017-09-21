@@ -19,7 +19,7 @@ gsort -y x
 
 order y x
 
-recode y (4=2)(6=3)
+recode y (4=2) (6=3)
 
 gen d_y10=(y==10)
 gen d_y10_v2=(y==10) if y~=.
@@ -41,15 +41,14 @@ use es_list_seoul_2012, replace
 d
 d,s
 edit
-codebook
 
 sort district school_name
-by district: list school_nameprivate
-bysdistrict: tab private
+by district: list school_name private
+bys district: tab private
 
-sun_stu, d
-sun_stuif district=="종로구"
-sun_stuif district=="종로구" | district=="성북구"
+su n_stu, d
+su n_stu if district=="종로구"
+su n_stu if district=="종로구" | district=="성북구"
 
 
 
@@ -82,8 +81,8 @@ duplicates drop edu_admin district, force
 ** Collapse의 활용
 help collapse
 use es_list_seoul_2012, replace
-collapse (mean) n_stu(sd) n_tea(sum) n_stu6, by(district)
-collapse (mean) mean_stu=n_stu(sd) sd_stu=n_stu, by(district)
+collapse (mean) n_stu(sd) n_tea (sum) n_stu6, by(district)
+collapse (mean) mean_stu=n_stu (sd) sd_stu=n_stu, by(district)
 
 
 
