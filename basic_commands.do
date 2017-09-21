@@ -24,7 +24,7 @@ recode y (4=2) (6=3)
 gen d_y10=(y==10)
 gen d_y10_v2=(y==10) if y~=.
 
-count if y==10
+count if y==15
 
 drop if y<=5
 keep if y==15
