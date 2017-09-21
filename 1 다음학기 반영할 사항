@@ -1,0 +1,8 @@
+** Use data from the web for basic analysis and save it in the hard drive.
+
+** Think whether it is necessary to introduce "_n, _N" in Labor Econ.
+
+
+webuse auto
+webuse college
+webuse travel
