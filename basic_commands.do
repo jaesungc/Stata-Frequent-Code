@@ -8,7 +8,8 @@ set obs 10
 gen x=1
 gen y=x*10
 
-replace y=4 in2
+replace y=15
+replace y=4 in 2
 replace y=6 in 3
 replace y=20 in 5
 replace y=. in 8
@@ -25,10 +26,12 @@ gen d_y10_v2=(y==10) if y~=.
 
 count if y==10
 
-drop if y<=3
-keep if y==10
+drop if y<=5
+keep if y==15
 
 drop d_y10
+keep x
+
 rename x x_old
 
 
@@ -59,8 +62,7 @@ bysdistrict: gen schid3=_N
 order schid1 schid2 schid3
 
 clear
-edit
-set obs4
+set obs 4
 gen x=3
 replace x=5 in 2
 replace x=7 in 3
@@ -82,6 +84,7 @@ help collapse
 use es_list_seoul_2012, replace
 collapse (mean) n_stu(sd) n_tea(sum) n_stu6, by(district)
 collapse (mean) mean_stu=n_stu(sd) sd_stu=n_stu, by(district)
+
 
 
 ** unique
