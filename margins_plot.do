@@ -7,12 +7,12 @@ ologit sm_self $indep
 margins $indep, predict(outcome(3)) post
 eststo m1_o3_pp
 
-** Marignal effect
+** Marginal effect, method 1
 ologit sm_self $indep
 margins $indep_margin, predict(outcome(3)) post
 eststo m1_o3_margin1
 
-** Marignal effect
+** Marginal effect, method 2
 ologit sm_self $indep
 margins, dydx(*) predict(outcome(3)) post
 eststo m1_o3_margin2
