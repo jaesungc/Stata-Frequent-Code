@@ -1,3 +1,26 @@
 keep if inlist(cohort, 1830, 1860, 1890, 1920, 1950, 1980)
 
 keep if inrange(Birthyear, 1830, 1980)
+
+
+
+** 우석진 교수님 숫자변수명전환 샘플 코드
+import excel using fertility.xlsx, clear
+
+ foreach j of var B-T { 
+ 
+ local name = strtoname(`j'[1]) 
+ capture rename `j' `name' 
+ 
+ } 
+ 
+ drop in 1 
+ 
+ rename A region 
+ rename _* fer* 
+ 
+ reshape long fer, i(region) j(year) 
+ destring fer, replace 
+ egen id = group(region) 
+
+
