@@ -24,3 +24,18 @@ import excel using fertility.xlsx, clear
  egen id = group(region) 
 
 
+
+
+** Table로 내보낼 때 변수 선택하고 변수명 레이블하기. 
+qui reg loginc i.year educyr if sex!=. & age!=. & paeducyr!=. & empstat!=.
+estimate store m1
+
+qui reg loginc i.year educyr i.sex age paeducyr if empstat!=.
+estimate store m2
+
+qui reg loginc i.year educyr i.sex age paeducyr i.empstat
+estimate store m3
+
+esttab m1 m2 m3, b(3) se(3) r2 ar2 mtitles("Model 1" "Model 2" "Model 3") drop(*year) ///
+	 coeflabels(1.sex "men (ref.)" 2.sex "women" 1.empstat "std ft (ref)" 2.empstat "std pt" ///
+	 3.empstat "non-std ft" 4.empstat "non-std pt" 5.empstat "self-emp")
