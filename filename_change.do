@@ -60,7 +60,7 @@ foreach i of local mylevs {
 	disp `i'
 	gen long obsn = _n 
 	qui: su obsn if cntryid == `i' 
-	local j = `r(min)' // 여기서 local j로 저장한 숫자가 해당 국가의 code와 name을 가진 열의 위치
+	local j = `r(min)' // 여기서 local j로 저장한 숫자가 해당 국가의 code와 name을 가진 행(row)의 위치
 	
 	local cnt_name=cnt[`j'] 
 	disp "`cnt_name'"
