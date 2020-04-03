@@ -28,7 +28,7 @@ forv i=1/10 {
 	graph export "fig`i'.png", replace
 	}
 
-* 파일명의 suffix가 "일련번호"에 해당하는 행(row)에 위치한 "국가명"이 되도록 파일며의 suffix 변경하기
+* 파일명의 suffix가 "일련번호"에 해당하는 행(row)에 위치한 "국가명"이 되도록 파일명의 suffix 변경하기
 forv i=1/10 {
 	local cnt_name=cnt[`i']
 	disp "`cnt_name'"
