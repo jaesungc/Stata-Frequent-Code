@@ -3,7 +3,7 @@
 ** 2015년 PISA에 참여한 10개의 국가만을 남긴 후, 일련번호 또는 국가번호가 suffix로 사용된 파일명을 suffix가 국가명이 되도록 변경하는 코드
 
 ** 실습 Data: pisa_cnt_list.dta
-** PISA 2015 자료에서 cntryid, cnt 변수만 남기고 국가별로 unique한 73개 케이스만 남김 
+** PISA 2015 자료에서 cntryid, cnt 변수만 남기고, 각 국가별로 하나의 사례만 unique하게 73개 관찰치만 남김
 ** (실습파일은 샘플 코드가 저장된 곳과 동일한 Github Repo에 올려져 있음 또는 여기서 다운로드 가능: 
 ** https://github.com/jaesungc/Stata-Frequent-Code/blob/master/pisa_cnt_list.dta)
 
