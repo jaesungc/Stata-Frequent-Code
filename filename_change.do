@@ -8,7 +8,6 @@
 ** https://github.com/jaesungc/Stata-Frequent-Code/blob/master/pisa_cnt_list.dta)
 
 
-cd "D:\Stata Project"
 
 ** Test용 sample data 만들기
 use pisa_cnt_list, replace
