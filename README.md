@@ -37,3 +37,5 @@
   
 - [** **]()
 
+
+### [미분류 또는 향후 공부해서 추가할 사항](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/0%20etc.md)
