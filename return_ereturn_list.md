@@ -23,6 +23,9 @@ forv i=1/5 {
 	}
 ```
 
+<br>
+<br>
+
 ### ereturn list
 
 #### Regression을 돌린 후 e(N), e(F), e(r2), e(b), e(V) 등 추출 가능
