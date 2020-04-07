@@ -13,11 +13,11 @@ keep if inrange(Birthyear, 1830, 1980)
 
 ```stata
 twoway (scatter order est, msymbol(none))  ///
-(scatter order est )                        ///
-(rcap min95 max95 order, horizontal ),      ///
-ylabel(1/6, valuelabel angle(0)) legend(off) ytitle("") ///
-xlabel(-0.7 (0.2) 0.5) ///
-xtitle("") title( "남학생-수학") xline(0)  name(boy_mat)
+	(scatter order est )                        ///
+	(rcap min95 max95 order, horizontal ),      ///
+	ylabel(1/6, valuelabel angle(0)) legend(off) ytitle("") ///
+	xlabel(-0.7 (0.2) 0.5) ///
+	xtitle("") title( "남학생-수학") xline(0)  name(boy_mat)
 ```
 
 <br>
