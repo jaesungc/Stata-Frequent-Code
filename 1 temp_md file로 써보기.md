@@ -1,5 +1,7 @@
 ** 1986년 1월부터 2019년 12월까지 주택매매가격 종합지수(전국)를 Stata에서 그려보는 코드입니다.
+
 ** 자료 출처: KB국민은행 Liiv ON 월간 KB주택가격동향
+
 ** Stata 파일: housing_price.dta
 
 ```stata
@@ -36,31 +38,28 @@ graph twoway tsline price, ///
   
   
   
- /* 추후 참고 자료: 일별 자료 작업을 원할 때는 아래 링크 자료 참고할 것.
+### 추후 참고 자료: 일별 자료 작업을 원할 때는 아래 링크 자료 참고할 것.
  
- Stata manual for datetime: https://www.stata.com/manuals13/ddatetime.pdf
-  date td = mdy(M, D, Y)
-  weekly date tw = yw(Y, W)
-  monthly date tm = ym(Y, M)
-  quarterly date tq = yq(Y, Q)
- 
-  gen eventdate = mdy(mo, da, yr)
-  format eventdate %td
- 
-  display date("5-12-1998", "MDY")
-  14011
+- [Stata manual for datetime](https://www.stata.com/manuals13/ddatetime.pdf)
   
-  display %td date("5-12-1998", "MDY")
-  12may1998
+```stata
+date td = mdy(M, D, Y)
+weekly date tw = yw(Y, W)
+monthly date tm = ym(Y, M)
+quarterly date tq = yq(Y, Q)
  
- Stata manual for tsline: https://www.stata.com/manuals13/tstsline.pdf
+gen eventdate = mdy(mo, da, yr)
+format eventdate %td
  
- UCLA: https://stats.idre.ucla.edu/stata/faq/how-do-i-graph-data-with-dates/
+display date("5-12-1998", "MDY")
+*14011
+  
+display %td date("5-12-1998", "MDY")
+*12may1998
+ ```
  
- Adding recession shading to time-series graphs: https://blog.stata.com/2020/02/13/adding-recession-shading-to-time-series-graphs/
- 
- Label 처리: https://www.stata.com/support/faqs/graphics/time-of-day-labels/
- 
- Left and right Y-axies 다중 처리: https://www.stata.com/manuals13/g-2graphtwowayline.pdf
- 
- */
+- [Stata manual for tsline](https://www.stata.com/manuals13/tstsline.pdf)
+- [UCLA - How Do I Graph Data with Dates](https://stats.idre.ucla.edu/stata/faq/how-do-i-graph-data-with-dates/)
+- [Stata Blog - Adding recession shading to time-series graphs](https://blog.stata.com/2020/02/13/adding-recession-shading-to-time-series-graphs/)
+- [Label 처리](https://www.stata.com/support/faqs/graphics/time-of-day-labels/)
+- [Left and right Y-axies 다중 처리](https://www.stata.com/manuals13/g-2graphtwowayline.pdf)
