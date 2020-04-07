@@ -26,6 +26,7 @@
 ### Programming 익히기
 - [**local variable & loop**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/local_loop.do)
 - [**return, ereturn list**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/return_ereturn_list.md)
+- (update 예정) Ado-file 만들기
 
 
 ### 파일 처리
