@@ -5,6 +5,7 @@
 ### 실습 Data: [pisa_cnt_list.dta](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/data/pisa_cnt_list.dta)
 PISA 2015 자료에서 cntryid, cnt 변수만 남기고, 각 국가별로 하나의 사례만 unique하게 73개 관찰치만 남김
 
+<br>
 
 ```stata
 ** Test용 sample data 만들기
