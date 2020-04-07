@@ -27,7 +27,7 @@
 
 
 ### 파일 처리
-- [**파일명 변경**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/filename_change.md): loop와 local variable을 사용해서 규칙을 가지고 생성된 파일들의 파일명을 일괄 변경
+- [**파일명 일괄 변경**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/filename_change.md): loop와 local variable을 사용해서 규칙을 가지고 생성된 파일들의 파일명을 일괄 변경
 
 
 ### 분석 사례
