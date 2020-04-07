@@ -32,7 +32,11 @@ graph twoway tsline price, ///
 	graphregion(color(white)) bgcolor(white) ///
 	note("Notes: Prices shown have been standardized to 100 for Jan. 2019.")
 ```
-  
+
+위 코드를 사용해서 생성한 그림은 다음과 같습니다.
+![alt 주택가격변화](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/image/fig_housing_price_0407.png)
+
+
   
 <br>
 
