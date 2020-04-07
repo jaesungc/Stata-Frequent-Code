@@ -4,5 +4,4 @@
 
 - [**Stacked bar 그리기**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Graph_Stacked%20bar.do)
 
-- [**파일명 변경**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/filename_change.do)
- loop와 local variable을 사용해서 규칙을 가지고 생성된 파일들의 파일명을 일괄 변경
+- [**파일명 변경**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/filename_change.do): loop와 local variable을 사용해서 규칙을 가지고 생성된 파일들의 파일명을 일괄 변경
