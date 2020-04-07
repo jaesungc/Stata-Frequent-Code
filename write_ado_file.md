@@ -10,6 +10,7 @@ http://www.ncer.edu.au/events/documents/QUT15S1.slides.pdf
 
 ### Sample Code: 
 
+
 #### Programs With No Arguments
 
 ```stata
@@ -18,5 +19,8 @@ program define myfun
     version 13
     forv i=1/10 {
       display `i'
+      }
 end
+
+myfun
 ```
