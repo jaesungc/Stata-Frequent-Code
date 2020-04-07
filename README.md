@@ -37,6 +37,8 @@
 [Cleaning](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Kosis_Census_edu_cleaning.do)
 & [Analysis](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Kosis_Census_edu_analysis.do)
   
+<br>
+<br>
 
 ### [미분류 또는 향후 공부해서 추가할 사항](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/0%20etc.md)
 
