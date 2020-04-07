@@ -4,7 +4,7 @@
 - [**기초 명령어**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/basic_commands.do)
 - [**egen** 명령어](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/egen.do)
 - [**append, merge, reshape**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/append_merge_reshape.do)
-- [**string 변수 다루기**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/string_manipulation.do)
+- [**문자 변수 다루기**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/string_manipulation.do)
 - [**레이블 작업**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/label_ex.do)
 
 
@@ -31,7 +31,7 @@
 
 
 ### 분석 사례
-- [**Census 2010 - 최종 교육수준 분포**]
+- **Census 2010 - 최종 교육수준 분포**
   + [Cleaning](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Kosis_Census_%EA%B5%90%EC%9C%A1%EB%B6%84%ED%8F%AC_cleaning.do)
   + [Analysis](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Kosis_Census_%EA%B5%90%EC%9C%A1%EB%B6%84%ED%8F%AC_analysis.do)
   
