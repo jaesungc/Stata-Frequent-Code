@@ -58,9 +58,9 @@ graph twoway tsline price, ///
  
  Adding recession shading to time-series graphs: https://blog.stata.com/2020/02/13/adding-recession-shading-to-time-series-graphs/
  
- Label 다듬기: https://www.stata.com/support/faqs/graphics/time-of-day-labels/
+ Label 처리: https://www.stata.com/support/faqs/graphics/time-of-day-labels/
  
- Left and Right Axies를 다르게 그리기: https://www.stata.com/manuals13/g-2graphtwowayline.pdf
+ Left and right Y-axies 다중 처리: https://www.stata.com/manuals13/g-2graphtwowayline.pdf
  
  */
  
