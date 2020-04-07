@@ -6,7 +6,7 @@
 <br>
 
 ```stata
-use housingp_rice, replace
+use housing_price, replace
 
 * time series data로 선언하기 위해 데이터 구조 변경
 rename jan m1
