@@ -1,5 +1,6 @@
-** length, lower, strpos, substr, subinstr, trim, split
+### 살펴볼 명령어: length, lower, strpos, substr, subinstr, trim, split
 
+```stata
 help string_functions
 
 length(s)
@@ -22,25 +23,25 @@ trim(" this ") = "this“
 
 wordcount(s)
 wordcount("Global Economics in SKKU") = 4
+```
 
+<br>
+
+### Regular expression in Stata
+```
 regexm(s,re)
-
 regexr(s1,re,s2)
 
 sysuse auto
 list make if regexm(make, "^B") == 1
 list make if regexm(make, "ck") == 1
 list make if regexm(make, "[0-9]$") == 1
+```
 
+<br>
 
-** Further references:
-* (in Korean) http://dreamingpeace.tistory.com/57
-* http://www.stata.com/support/faqs/data-management/regular-expressions/
-* http://soc596.blogspot.kr/
-* http://econweb.tamu.edu/jnighohossian/tools/stata/regexp.html
-
-
-** 예제: 심평원 의료기관 현황 분석에 사용된 코드 샘플
+### 활용 사례: 심평원 의료기관 현황 분석에 사용된 코드 샘플
+```stata
 gen temp=address
 split temp, p("(")
 split temp2, p(,)
@@ -53,4 +54,14 @@ split address
 rename address1 region
 rename address2 district
 gen d_focus=(strpos(name,"성형")>0)
+```
+
+***
+
+### Further references:
+- (in Korean) http://dreamingpeace.tistory.com/57
+- http://www.stata.com/support/faqs/data-management/regular-expressions/
+- http://soc596.blogspot.kr/
+- http://econweb.tamu.edu/jnighohossian/tools/stata/regexp.html
+
 
