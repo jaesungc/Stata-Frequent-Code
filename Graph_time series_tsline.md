@@ -47,7 +47,7 @@ graph twoway tsline price, ///
 
 ### 추후 참고 자료
  
-- [Stata manual for datetime](https://www.stata.com/manuals13/ddatetime.pdf)
+- [Stata manual for **datetime**](https://www.stata.com/manuals13/ddatetime.pdf)
   
 ```stata
 date td = mdy(M, D, Y)
@@ -65,8 +65,8 @@ display %td date("5-12-1998", "MDY")
 *12may1998
  ```
  
-- [Stata manual for tsline](https://www.stata.com/manuals13/tstsline.pdf)
-- [UCLA - How Do I Graph Data with Dates](https://stats.idre.ucla.edu/stata/faq/how-do-i-graph-data-with-dates/)
-- [Stata Blog - Adding recession shading to time-series graphs](https://blog.stata.com/2020/02/13/adding-recession-shading-to-time-series-graphs/)
+- [Stata manual for **tsline**](https://www.stata.com/manuals13/tstsline.pdf)
+- [UCLA - How can I graph data with dates](https://stats.idre.ucla.edu/stata/faq/how-do-i-graph-data-with-dates/)
+- [Stata Blog - Adding recession **shading** to time-series graphs](https://blog.stata.com/2020/02/13/adding-recession-shading-to-time-series-graphs/)
 - [Label 처리](https://www.stata.com/support/faqs/graphics/time-of-day-labels/)
-- [Left and right Y-axies 다중 처리](https://www.stata.com/manuals13/g-2graphtwowayline.pdf)
+- [Left and right Y-axies 두 개 표시](https://www.stata.com/manuals13/g-2graphtwowayline.pdf)
