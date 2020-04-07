@@ -4,7 +4,7 @@
 - [**기초 명령어**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/basic_commands.do)
 - [**egen** 명령어](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/egen.do)
 - [**append, merge, reshape**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/append_merge_reshape.do)
-- [**문자 변수 다루기**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/string_manipulation.do)
+- [**문자 변수 다루기**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/string_manipulation.md)
 - [**레이블 작업**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/label_ex.do)
 
 
