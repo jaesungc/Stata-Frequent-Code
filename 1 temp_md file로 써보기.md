@@ -34,8 +34,9 @@ graph twoway tsline price, ///
 ```
   
   
-  
-  
+<br> 
+***
+
 ### 추후 참고 자료
  
 - [Stata manual for datetime](https://www.stata.com/manuals13/ddatetime.pdf)
