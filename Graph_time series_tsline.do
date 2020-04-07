@@ -21,7 +21,7 @@ rename dec m12
 reshape long m, i(year) j(month)
 rename m price
 
-* 년월 변수를 생성해서 월별 time series data 선언
+* 월 변수를 생성해서 월별 time series data 선언
 gen modate=ym(year, month)
 tsset modate, monthly
 
