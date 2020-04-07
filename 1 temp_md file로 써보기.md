@@ -1,8 +1,6 @@
-** 1986년 1월부터 2019년 12월까지 주택매매가격 종합지수(전국)를 Stata에서 그려보는 코드입니다.
-
-** 자료 출처: KB국민은행 Liiv ON 월간 KB주택가격동향
-
-** Stata 파일: housing_price.dta
+### 1986년 1월부터 2019년 12월까지 주택매매가격 종합지수(전국)를 Stata에서 그려보는 코드입니다.
+### 자료 출처: KB국민은행 Liiv ON 월간 KB주택가격동향
+### Stata 파일: housing_price.dta
 
 ```stata
 use housingp_rice, replace
@@ -38,7 +36,7 @@ graph twoway tsline price, ///
   
   
   
-### 추후 참고 자료: 일별 자료 작업을 원할 때는 아래 링크 자료 참고할 것.
+### 추후 참고 자료
  
 - [Stata manual for datetime](https://www.stata.com/manuals13/ddatetime.pdf)
   
