@@ -1,4 +1,4 @@
-** t-test Result Export to make a table in Excel
+** Exporting t-test results to make a table in Excel
 
 local file_name "sum_attrition_check_0925.csv"
 eststo clear
