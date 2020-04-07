@@ -58,10 +58,10 @@ gen d_focus=(strpos(name,"성형")>0)
 
 ***
 
-### Further references:
-- (in Korean) http://dreamingpeace.tistory.com/57
-- http://www.stata.com/support/faqs/data-management/regular-expressions/
-- http://soc596.blogspot.kr/
-- http://econweb.tamu.edu/jnighohossian/tools/stata/regexp.html
+### Further references for regular expression in Stata
+- [Source 1 정규표현식 관련 블로그 글](http://dreamingpeace.tistory.com/57)
+- [Source 2 Stata.com](http://www.stata.com/support/faqs/data-management/regular-expressions/)
+- [Source 3 Regular Expressions for Dummies](http://soc596.blogspot.kr/)
+
 
 
