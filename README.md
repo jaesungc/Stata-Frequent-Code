@@ -1,4 +1,4 @@
-#### 분석에 자주 사용하는 코드와 다른 분들이 참고할만한 코드를 정리해두는 공간입니다.
+#### 분석에 자주 사용하는 코드와 다른 분들이 참고할만한 참고자료를 정리해두는 공간입니다.
 
 - [**Time series chart** - 주택매매가격 종합지수(전국)](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Graph_time%20series_tsline.md)
 
