@@ -1,5 +1,7 @@
 ### 분석에 자주 사용하는 코드, 수업 실습 코드, 그리고 다른 분들이 참고할만한 자료를 정리해두는 공간입니다.
 
+<br>
+
 ### 데이터 전처리 및 기초 통계
 - [**기초 명령어**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/basic_commands.do)
 - [**egen** 명령어](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/egen.do)
@@ -35,7 +37,7 @@
 [Cleaning](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Kosis_Census_edu_cleaning.do)
 & [Analysis](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Kosis_Census_edu_analysis.do)
   
-- [** **]()
-
 
 ### [미분류 또는 향후 공부해서 추가할 사항](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/0%20etc.md)
+
+- [** **]()
