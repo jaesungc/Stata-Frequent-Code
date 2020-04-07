@@ -2,7 +2,8 @@
 ** 자료 출처: KB국민은행 Liiv ON 월간 KB주택가격동향
 ** Stata 파일: housing_price.dta
 
-use housingprice, replace
+```stata
+use housingp_rice, replace
 
 * time series data로 선언하기 위해 데이터 구조 변경
 rename jan m1
@@ -30,7 +31,7 @@ graph twoway tsline price, ///
 	xtitle("Period") ytitle("Housing price") xlabel(312(24)720, angle(45)) ///
 	graphregion(color(white)) bgcolor(white) ///
 	note("Notes: Prices shown have been standardized to 100 for Jan. 2019.")
-  
+```
   
   
   
