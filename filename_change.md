@@ -7,8 +7,9 @@ PISA 2015 자료에서 cntryid, cnt 변수만 남기고, 각 국가별로 하나
 
 <br>
 
+
+### 실습에 사용할 sample data 만들기
 ```stata
-** Test용 sample data 만들기
 use pisa_cnt_list, replace
 keep in 1/10
 gen x=_n
@@ -30,7 +31,6 @@ forv i=1/10 {
 forv i=1/10 {
 	local cnt_name=cnt[`i']
 	disp "`cnt_name'"
-	
 	shell ren "fig`i'.png" "fig_`cnt_name'.png"
 	}
 ```
