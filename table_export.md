@@ -1,15 +1,20 @@
-** Table Export in Stata: outreg2, xml_tab, tabout, est post
+### Table Export in Stata: outreg2, xml_tab, tabout, est post
 
+#### 필요한 패키지를 먼저 설치합니다.
+
+```stata
 ssc install estout
 ssc install outreg2
 ssc install xml_tab
+```
 
+<Br>
+
+### Exporting Regression Tables
+
+```stata
 clear
 sysuse auto
-
-**************************
-** Exporting Regression Tables
-**************************
 
 ** Save results from regression estimatation
 eststo clear
@@ -24,9 +29,8 @@ reg price mpg weight length foreign
 eststo m4
 
 
-** Summary results on the screen
+** Summarize estimation results on the screen
 est table *, b(%9.3f) star(.1 .05 .01) stats(N)
-
 
 ** xml_tab
 xml_tab *, ///
@@ -45,13 +49,13 @@ reg price mpg
 outreg2 using table2.xls, replace
 reg price mpg weight
 outreg2 using table2.xls, append
+```
 
+<br>
 
+### Exporting Summary Statistics
 
-*****************************
-** Exporting Summary Statistics
-*****************************
-** Descriptive statistics
+```stata
 eststo clear
 estpost sum price mpg weight length
 esttab using summary.csv, cells("count(fmt(0)) mean(fmt(2)) sd(fmt(2)) min(fmt(1)) max(fmt(0))") nomtitle nonumber replace
@@ -59,10 +63,16 @@ esttab using summary.csv, cells("count(fmt(0)) mean(fmt(2)) sd(fmt(2)) min(fmt(1
 eststo clear
 bys foreign: eststo: estpost sum price mpg weight length
 esttab using summary.csv, cells("count(fmt(0)) mean(fmt(2)) sd(fmt(2)) min(fmt(1)) max(fmt(0))") nomtitle nonumber append
+```
 
-** Exporting Tabulations
+<br>
+
+#### Exporting Tabulations
+
+```stata
 eststo clear
 forv i=0/1 {
 	eststo: estpost tab rep78 if foreign==`i'
 	}
 esttab using summary.csv, cells(pct(fmt(1))) noobs append
+```
