@@ -20,7 +20,7 @@
 
 ### Table 내보내기
 - [**회귀분석 결과 및 요약통계량 내보내기**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/table_export.md)
-- [**Matrix로 통계량 추출**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/matrix_export.do)
+- [**검정통계량 Matrix로 만들어 내보내기(t-value, F-value)**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/matrix_export.md)
 
 
 ### Programming 익히기
