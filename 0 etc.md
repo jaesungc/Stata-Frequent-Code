@@ -22,7 +22,8 @@ twoway (scatter order est, msymbol(none))  ///
 
 <br>
 
-### 우석진 교수님 숫자변수명전환 샘플 코드
+### 엑셀에서 숫자가 변수명으로 된 자료를 Stata long-form data로 전환하기 <br>
+(참고 자료 및 fertility.xlsx 데이터: [우석진 교수님 블로그](https://econbigdata.tistory.com/67?category=724580))
 
 ```stata
 import excel using fertility.xlsx, clear
