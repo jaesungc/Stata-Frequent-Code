@@ -1,7 +1,7 @@
 Stata를 처음 배우는 이들이 command window에서 한 줄 한 줄 입력하면서 Stata의 기본 기능을 살펴볼 때 유용한 코드입니다.
 
 
-### First Simple Operation in Stata
+### 기초적인 필수 명령어들
 
 ```stata
 clear
@@ -40,7 +40,7 @@ rename x x_old
 
 <br>
 
-### Data Examining
+### Data 살펴보기
 
 ```stata
 use es_list_seoul_2012, replace
