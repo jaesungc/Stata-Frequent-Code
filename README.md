@@ -3,7 +3,7 @@
 <br>
 
 ### 데이터 전처리 및 기초 통계
-- [**기초 명령어**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/basic_commands.do)
+- [**기초 명령어**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/basic_commands.md)
 - [**egen** 명령어](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/egen.do)
 - [**append, merge, reshape**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/append_merge_reshape.md)
 - [**문자 변수 다루기**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/string_manipulation.md)
