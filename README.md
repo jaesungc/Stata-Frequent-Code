@@ -56,6 +56,6 @@
   * [Youtube VOD](https://www.youtube.com/channel/UCYY0GfLR7QHH2YsWJAR3bVw) 
 - [**Stat cheat sheet**](http://geocenter.github.io/StataTraining/portfolio/01_resource/)
 - [**Stata Tutorial by German Rodriguez at Princeton**](https://data.princeton.edu/stata)
-- [**Stata Blog*](https://blog.stata.com/)
+- [**Stata Blog**](https://blog.stata.com/)
 - [**UCLA’s IDRE** Stata Modules](https://stats.idre.ucla.edu/stata/modules/)
 - [**UW-Madison SSCC**](https://www.ssc.wisc.edu/sscc/pubs/sfs/home.htm)
