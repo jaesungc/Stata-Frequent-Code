@@ -1,5 +1,6 @@
-** Exporting t-test results to make a table in Excel
+#### Exporting t-test results to make a table in Excel
 
+```stata
 local file_name "sum_attrition_check_0925.csv"
 eststo clear
 local var_list self_effi1 social1 eg_bhv1 eg_psy1 eg_cog1 kor_std1 eng_std1 mat_std1
@@ -19,8 +20,13 @@ mat A=A[2..10,1]
 mat coln A=P-Value
 mat list A
 mat2txt, matrix(A) saving(`file_name') append format(%6.3f %6.3f)
+```
 
+<br>
 
+#### Calculating F-values and exporting them to make a table in Excel
+
+```stata
 foreach outcome of local varlist {
      eststo clear
      eststo: estpost tab `outcome'
@@ -59,3 +65,4 @@ foreach g in sex cohort school {
      mat list C
      mat2txt, matrix(C) saving(anova_test_첫직장.csv) append format(%6.2f %6.2f) title( "Test by `g'")
      }
+```
