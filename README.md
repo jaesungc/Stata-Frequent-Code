@@ -45,3 +45,17 @@
 ### [미분류 또는 향후 공부해서 추가할 사항](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/0%20etc.md)
 
 - [** **]()
+
+
+### Stata를 배울 때 참고할만한 자료 정리
+- **우석진 교수님** 
+  * [경제빅데이터 저장소](https://econbigdata.tistory.com/category) & [빅데이터 블로그](https://econbigdata.netlify.com/)
+  * [K-MOOC 강의 - STATA를 이용한 경제 데이터 분석론](http://www.kmooc.kr/courses/course-v1:MJU+MJU02+2019_T2/course)
+  * [Youtube VOD](https://www.youtube.com/channel/UCYY0GfLR7QHH2YsWJAR3bVw)
+  
+- [Stat cheat sheet](http://geocenter.github.io/StataTraining/portfolio/01_resource/)
+- [**Stata Tutorial by German Rodriguez at Princeton**](https://data.princeton.edu/stata)
+
+- [Stata Blog](https://blog.stata.com/)
+- [UCLA’s IDRE Stata Modules](https://stats.idre.ucla.edu/stata/modules/)
+- [UW-Madison SSCC](https://www.ssc.wisc.edu/sscc/pubs/sfs/home.htm)
