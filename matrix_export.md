@@ -63,6 +63,8 @@ foreach g in sex cohort school {
      mat rown B=`varlist'
      mat C=(A,B)
      mat list C
-     mat2txt, matrix(C) saving(anova_test_첫직장.csv) append format(%6.2f %6.2f) title( "Test by `g'")
+     mat2txt, matrix(C) saving(anova_test_first_job.csv) append format(%6.2f %6.2f) title( "Test by `g'")
      }
 ```
+
+(청소년정책연구원 보고서 작업할 때 청년패널 또는 GOMS 분석할 때 작성했던 코드로 보임. 추후 데이터 확인해서 샘플 자료 탑재할 것)
