@@ -1,5 +1,39 @@
 추후 분류하거나 더 살펴보고 익힐 명령어들을 임시로 모아두는 공간입니다.
 
+### 추후 살펴보고 정리할 코드
+```stata
+binscatter // module to generate binned scatterplots
+
+clonevar
+
+coefplot
+
+fre // module to display one-way frequency table, 레이블과 원래 numeric value를 함께 볼 수 있음.
+
+markstat
+
+rsource
+
+nsplit // nsplit date, digits(2 4) generate(month year)
+
+renames
+
+ssc whatshot, n(20)
+
+winsor2
+distinct // Report number(s) of distinct observations or values
+egenmore
+parmest // module to create new data set with one observation per parameter of most recent model
+regsave
+grstyle
+getsymbols
+ciplot
+insheetjson
+xls2dta
+```
+
+<br>
+
 ### Script를 간결하게 작성하기 위해서 익힐 명령어들 모음
 
 ```stata
