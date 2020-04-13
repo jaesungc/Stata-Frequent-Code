@@ -1,4 +1,44 @@
-### 통계청이 사용하는 지역 코드를 한글 지명으로 레이블
+### 자주 사용한 레이블 관련 코드를 모아둔 공간입니다.
+
+#### 성별
+```stata
+label variable d_male "남성 여부"
+label define d_male 0 "여" 1 "남"
+label values d_male d_male
+```
+
+```stata
+label variable gender "Gender"
+label define gender 0 "Female" 1 "Male"
+label values gender gender
+```
+
+```stata
+label variable gender "성별"
+label define gender 0 "Girl" 1 "Boy"
+label values gender gender
+```
+
+
+
+#### 공학/별학
+```stata
+replace school_type="1" if school_type=="남자"
+replace school_type="2" if school_type=="여자"
+replace school_type="3" if school_type=="남여공학"
+destring school_type, replace
+
+label variable school_type "Gender of students in a school"
+label define school_type 1 "Boys" 2 "Girls" 3 "CoEd"
+label values school_type school_type
+```
+
+#### 단성학교 더미 변수 만들기
+```stata
+recode school_type (1 2=1) (3=0), gen(d_sss)
+```
+
+#### 통계청이 사용하는 지역 코드를 한글 지명으로 레이블
 ```stata
 #delimit ;
 label define region_k
@@ -25,8 +65,7 @@ label define region_k
 label values region region_k
 ```
 
-
-### 일련번호로 된 지역 코드를 한글 지명으로 레이블
+#### 일련번호로 된 지역 코드를 한글 지명으로 레이블
 ```stata
 #delimit ;
 label define region_k
@@ -52,7 +91,7 @@ label define region_k
 label values region region_k
 ```
 
-### 일련번호로 된 지역 코드를 한글 지명으로 레이블
+#### 일련번호로 된 지역 코드를 한글 지명으로 레이블
 ```stata
 #delimit ;
 label define region_k
@@ -104,33 +143,14 @@ label define region_e
 label values region region_e
 ```
 
-### 대도시 지역 더미변수 만들기
+#### 대도시 지역을 나타내는 더미 변수 만들기
 ```stata
-decode region, gen(region_k)
+* region 변수가 string인 경우
+decode region, gen(region_k) // 레이블 처리된 numeric 변수를 이용해서 string 변수 생성하기
 gen d_metro=(region_k=="서울" | region_k=="광주" | region_k=="대구" | region_k=="대전" | region_k=="울산" | region_k=="인천" | region_k=="부산")
+
+* region 변수가 numeric인 경우
+gen d_metro=(region<30)
 ```
 
-### 성별
-```stata
-label variable gender "성별"
-label define gender 0 "Girl" 1 "Boy"
-label values gender gender
-```
-
-### 공학/별학
-```stata
-replace school_type="1" if school_type=="남자"
-replace school_type="2" if school_type=="여자"
-replace school_type="3" if school_type=="남여공학"
-destring school_type, replace
-
-label variable school_type "Gender of students in a school"
-label define school_type 1 "Boys" 2 "Girls" 3 "CoEd"
-label values school_type school_type
-```
-
-### 단성학교 더미 변수 만들기
-```stata
-recode school_type (1 2=1) (3=0), gen(d_sss)
-```
 
