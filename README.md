@@ -7,7 +7,7 @@
 - [**egen** 명령어](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/egen.do)
 - [**append, merge, reshape**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/append_merge_reshape.md)
 - [**문자 변수 다루기**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/string_manipulation.md)
-- [**레이블 작업**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/label_ex.do)
+- [**레이블 작업**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/label_example.md)
 
 
 ### 그래프 그리기
