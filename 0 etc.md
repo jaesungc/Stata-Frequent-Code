@@ -1,5 +1,13 @@
 추후 분류하거나 더 살펴보고 익힐 명령어들을 임시로 모아두는 공간입니다.
 
+
+### 1995년 2% 센서스에서 가구 id 만들기
+```stata
+egen hhid=group(c1 c2 c4)
+```
+
+<br>
+
 ### 추후 살펴보고 정리할 코드
 ```stata
 binscatter // module to generate binned scatterplots
