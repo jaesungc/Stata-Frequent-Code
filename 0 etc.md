@@ -1,5 +1,14 @@
 추후 분류하거나 더 살펴보고 익힐 명령어들을 임시로 모아두는 공간입니다.
 
+### strmatch
+Census 자료 부모와 함께 사는지를 확인할 때 활용 가능한 코드
+```stata
+* 배우자(2) => 배우자의 부모(6)가 0명=0, 1명=1, 2명=2
+replace coresidence=0 if relate2==2
+replace coresidence=1 if relate2==2 & strmatch(allrelation, "*6*")
+replace coresidence=2 if relate2==2 & strmatch(allrelation, "*66*")
+tab allrelation coresidence if relate2==2
+```
 
 ### egen 활용 사례
 ```stata
