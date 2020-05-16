@@ -11,6 +11,8 @@ replace coresidence=2 if relate2==2 & strmatch(allrelation, "*66*")
 tab allrelation coresidence if relate2==2
 ```
 
+<br>
+
 ### egen 활용 사례
 ```stata
 ** 1995년 2% 센서스에서 가구 id 만들기
