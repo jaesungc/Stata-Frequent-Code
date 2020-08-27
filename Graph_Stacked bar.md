@@ -13,7 +13,7 @@ stack scheme(s2mono) graphregion(color(white)) bgcolor(white)
 ```
 
 
-### 대표 연령을 통해 살펴본 세대별 학력비율: stacked bar graph (Census 2010 작업했던 코드)
+### 대표 연령을 통해 살펴본 세대별 학력비율 (Census 2010 작업했던 코드)
 
 ```stata
 ** 전문대 진학 이상
