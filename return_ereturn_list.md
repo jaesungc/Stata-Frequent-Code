@@ -8,7 +8,7 @@ egen math=rowmean(bsmmat0?)
 su math
 return list
 disp r(mean)
-gen math_std1=(var1-r(mean))/r(sd)
+gen math_std1=(math-r(mean))/r(sd)
 egen math_std2=std(math)
 ```
 
