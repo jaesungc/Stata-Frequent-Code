@@ -12,19 +12,3 @@ legend(lab(1 "Chosun") lab(2 "Joongang") lab(3 "Hankyoreh") lab(4 "Kyunghang") c
 stack scheme(s2mono) graphregion(color(white)) bgcolor(white)
 ```
 
-
-### 대표 연령을 통해 살펴본 세대별 학력비율 (Census 2010 작업했던 코드)
-
-```stata
-** 전문대 진학 이상
-egen n_above_jc=rowtotal(jc uv ma phd)
-gen p_above_jc=n_above_jc/n_pop
-twoway (scatter p_above_jc age if gender==0) (scatter p_above_jc age if gender==1)
-twoway (connected p_above_jc age if gender==0, msymbol(O)) (connected p_above_jc age if gender==1, msymbol(Oh)) 
-
-** 4년제 대학 졸업 이상
-egen n_above_uv_grad=rowtotal(uv_grad ma phd)
-gen p_above_uv_grad=n_above_uv_grad/n_pop
-twoway (connected p_above_uv_grad age if gender==0) (connected p_above_uv_grad age if gender==1), legend(label(1 Female) label(2 Male)) title(Ratio of University Graduation or Above)
-```stata
-
