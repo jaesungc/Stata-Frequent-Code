@@ -12,14 +12,13 @@
 - [**append, merge, reshape**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/append_merge_reshape.md)
 - [**egen** 명령어](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/egen.do)
 - [**문자 변수 다루기**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/string_manipulation.md)
+- [**Regular expression (정규표현식)**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/regular_expression.do)
 
 
-### 그래프 그리기
-- [**Connected line**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Graph_Connected%20line.do)
-- [**Stacked bar**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Graph_Stacked%20bar.md)
-- [**Kernel density**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/kdensity_ex.do)
-- [**Margins plot**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/margins_plot.do)
-- [**Time series chart** - 주택매매가격 종합지수(전국)](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Graph_time%20series_tsline.md)
+### Programming 익히기
+- [**local variable & loop**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/local_loop.)
+- [**return, ereturn list**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/return_ereturn_list.md)
+- (update 예정) Ado-file 만들기
 
 
 ### Table 내보내기
@@ -28,10 +27,13 @@
 - (update 예정) [**putexcel**](https://sites.google.com/view/jaesung/stata-resources)
 
 
-### Programming 익히기
-- [**local variable & loop**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/local_loop.)
-- [**return, ereturn list**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/return_ereturn_list.md)
-- (update 예정) Ado-file 만들기
+### 그래프 그리기
+- [**Graph sample code for stata introduction**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/graph_example.do)
+- [**Connected line**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Graph_Connected%20line.do)
+- [**Stacked bar**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Graph_Stacked%20bar.md)
+- [**Kernel density**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/kdensity_ex.do)
+- [**Margins plot**](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/margins_plot.do)
+- [**Time series chart** - 주택매매가격 종합지수(전국)](https://github.com/jaesungc/Stata-Frequent-Code/blob/master/Graph_time%20series_tsline.md)
 
 
 ### 파일 처리
