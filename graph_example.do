@@ -27,14 +27,15 @@ egen n_above_uv_grad=rowtotal(uv_grad ma phd)
 gen p_above_uv_grad=n_above_uv_grad/n_pop
 
 twoway ///
-(scatter p_above_jc age if gender==0) ///
-(scatter p_above_jc age if gender==1)
+	(scatter p_above_uv_grad age if gender==0) ///
+	(scatter p_above_uv_grad age if gender==1)
 
 twoway ///
-(connected p_above_jc age if gender==0, msymbol(O)) ///
-(connected p_above_jc age if gender==1, msymbol(Oh)) ///
-, legend(label(1 Female) label(2 Male)) ///
-title(Proportion of university graduates or above)
+	(connected p_above_uv_grad age if gender==0, msymbol(O)) ///
+	(connected p_above_uv_grad age if gender==1, msymbol(Oh)) ///
+	, legend(label(1 Female) label(2 Male)) ///
+	title(Proportion of university graduates or above) ///
+	ytitle(Proportion) xtitle(Age)
 
 
 
