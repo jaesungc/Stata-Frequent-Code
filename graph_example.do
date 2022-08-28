@@ -37,6 +37,11 @@ twoway ///
 	title(Proportion of university graduates or above) ///
 	ytitle(Proportion) xtitle(Age)
 
+twoway (scatter p_above_uv_grad age if gender==0), name(female)
+twoway (scatter p_above_uv_grad age if gender==1), name(male) 
+graph combine female male
+graph disp, xsize(10) ysize(6)
+
 
 
 ** Draw functions
